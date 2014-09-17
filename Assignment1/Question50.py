@@ -28,7 +28,7 @@ print("All Cases: %i \n\n %s" % (len(allCases), allCases))
 # any number of leading 0 or 1s
 # 5*1 or 5*0
 # any number of trailing 0 or 1s
-pattern = re.compile("^[01]*([1]{5})|([0]{5})[01]*$")
+pattern = re.compile("^[01]*(([1]{5})|([0]{5}))[01]*$")
 
 # Create a new list that filters based on regex pattern
 goodCases = filter(pattern.match, allCases)
